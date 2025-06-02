@@ -1,0 +1,22 @@
+{
+  "name": "@geoffreybooth/fetch-and-find-path",
+  "version": "0.1.0",
+  "description": "Start downloading some JSON from a URL, looking for a specific object path, and return that object as soon as it is found",
+  "exports": "./index.js",
+  "scripts": {
+    "lint:types": "tsc --noEmit --project jsconfig.json",
+    "test": "node --test test/index.js"
+  },
+  "keywords": [],
+  "author": "Geoffrey Booth <webadmin@geoffreybooth.com>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "JSONStream": "github:dominictarr/JSONStream",
+    "undici": "^7.10.0"
+  },
+  "devDependencies": {
+    "@types/jsonstream": "^0.8.33",
+    "typescript": "^5.8.3"
+  }
+}
