@@ -1,6 +1,6 @@
 {
   "name": "@geoffreybooth/fetch-and-find-path",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Start downloading some JSON from a URL, looking for a specific object path, and return that object as soon as it is found",
   "exports": "./index.js",
   "scripts": {
@@ -13,11 +13,11 @@
   "type": "module",
   "dependencies": {
     "minipass-json-stream": "^1.0.2",
-    "undici": "^7.10.0"
+    "undici": "^7.22.0"
   },
   "devDependencies": {
     "@types/jsonstream": "^0.8.33",
     "@types/node": "^25.4.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.3"
   }
 }
