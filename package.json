@@ -2,6 +2,7 @@
   "name": "@geoffreybooth/fetch-and-find-path",
   "version": "0.1.1",
   "description": "Start downloading some JSON from a URL, looking for a specific object path, and return that object as soon as it is found",
+  "types": "./index.d.ts",
   "exports": "./index.js",
   "scripts": {
     "lint:types": "tsc --noEmit --project jsconfig.json",
