@@ -1,9 +1,10 @@
 import { Transform } from 'node:stream'
 import { pipeline } from 'node:stream/promises'
 import { request } from 'undici'
-// @ts-ignore We can’t lowercase `jsonstream` because that fails in case-sensitive environments like Linux.
-import { parse } from 'JSONStream' // https://github.com/dominictarr/JSONStream
+import JSONStream from 'minipass-json-stream'
+/** @import { TransformCallback } from 'node:stream' */
 
+const { parse } = JSONStream
 
 /**
  * Fetches a JSON object from a URL and processes it as a stream.
@@ -38,7 +39,7 @@ export async function fetchAndFindPath(url, path, requestOptions = {}) {
 			})
 
 		const dataHandler = new Transform({
-			objectMode: true, // JSONStream outputs objects
+			objectMode: true, // minipass-json-stream outputs objects
 			transform(chunk, _encoding, callback) {
 				output = chunk // Capture the found value
 				finished = true

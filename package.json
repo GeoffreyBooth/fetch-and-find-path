@@ -12,11 +12,12 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "JSONStream": "github:dominictarr/JSONStream",
+    "minipass-json-stream": "^1.0.2",
     "undici": "^7.10.0"
   },
   "devDependencies": {
     "@types/jsonstream": "^0.8.33",
+    "@types/node": "^25.4.0",
     "typescript": "^5.8.3"
   }
 }

@@ -1,8 +1,12 @@
 {
 	"compilerOptions": {
 		"allowJs": true,
+		"baseUrl": ".",
 		"checkJs": true,
 		"forceConsistentCasingInFileNames": true,
+		"paths": {
+			"minipass-json-stream": ["./minipass-json-stream.d.ts"]
+		},
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true
